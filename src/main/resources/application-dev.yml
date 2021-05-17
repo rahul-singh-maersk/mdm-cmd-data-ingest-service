@@ -1,0 +1,26 @@
+spring:
+  datasource:
+    url: ${spring-datasource-url}
+    username: ${spring-datasource-username}
+    password: ${spring-datasource-password}
+    driver-class-name: org.postgresql.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.PostgreSQLDialect
+    hibernate:
+      ddl-auto: validate
+  flyway:
+    user: ${spring-datasource-username}
+    url: ${spring-datasource-url}
+    password: ${spring-datasource-password}
+    baseline-on-migrate: true
+    baseline-version: 1
+    baseline-description: Initial DB migration
+
+
+azure:
+  keyvault:
+    client-id: bfb494a1-a69f-4578-9736-ff7155beb273
+    client-key: 4Z43-YGRC~19_AALfq-slMW.IHQ3D9jPwN
+    tenant-id: 05d75c05-fa1a-42e7-9cf1-eb416c396f2d
+    uri: https://cmd-key-vault-dev01.vault.azure.net/
+    enabled: true
