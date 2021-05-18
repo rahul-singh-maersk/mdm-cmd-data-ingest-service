@@ -8,7 +8,7 @@ on:
         description: 'Script Change description'
         required: true
       env:
-        description: "Data Ingestion Environment(DEV/SIT/PP/PROD)"        
+        description: "(dev/sit/pp/prod)- Data Ingestion Environment"
         required: true
 
 jobs:
