@@ -10,6 +10,7 @@ on:
       env:
         description: "Data Ingestion Environment(DEV/SIT/PP/PROD)"        
         required: true
+
 jobs:
   build:
     runs-on: ubuntu-latest
